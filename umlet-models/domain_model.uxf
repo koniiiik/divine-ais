@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="12.1">
+<diagram program="umlet" version="11.5">
   <zoom_level>10</zoom_level>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>430</x>
+      <x>330</x>
       <y>270</y>
       <w>130</w>
       <h>30</h>
@@ -15,7 +15,7 @@
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>380</x>
+      <x>280</x>
       <y>430</y>
       <w>110</w>
       <h>30</h>
@@ -26,7 +26,7 @@
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>270</x>
+      <x>170</x>
       <y>160</y>
       <w>100</w>
       <h>30</h>
@@ -37,7 +37,7 @@
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>770</x>
+      <x>670</x>
       <y>440</y>
       <w>100</w>
       <h>30</h>
@@ -48,7 +48,7 @@
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>570</x>
+      <x>470</x>
       <y>370</y>
       <w>100</w>
       <h>30</h>
@@ -59,7 +59,7 @@
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>560</x>
+      <x>460</x>
       <y>750</y>
       <w>230</w>
       <h>30</h>
@@ -70,8 +70,8 @@
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>950</x>
-      <y>310</y>
+      <x>850</x>
+      <y>320</y>
       <w>130</w>
       <h>30</h>
     </coordinates>
@@ -81,21 +81,21 @@
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>760</x>
-      <y>310</y>
-      <w>400</w>
-      <h>470</h>
+      <x>660</x>
+      <y>320</y>
+      <w>324</w>
+      <h>460</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 lecture of subject                                
 m1=1
-m2=       1..*</panel_attributes>
-    <additional_attributes>30;450;250;450;250;30</additional_attributes>
+m2=    1..*</panel_attributes>
+    <additional_attributes>30;440;250;440;250;30</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>770</x>
+      <x>670</x>
       <y>200</y>
       <w>100</w>
       <h>30</h>
@@ -106,21 +106,21 @@ m2=       1..*</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>460</x>
+      <x>410</x>
       <y>180</y>
-      <w>330</w>
+      <w>280</w>
       <h>120</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
                         can view own
 m2=1
 m1=0..*  </panel_attributes>
-    <additional_attributes>310;30;130;30;130;100;100;100</additional_attributes>
+    <additional_attributes>260;30;80;30;80;100;50;100</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>1020</x>
+      <x>980</x>
       <y>500</y>
       <w>90</w>
       <h>30</h>
@@ -131,21 +131,21 @@ m1=0..*  </panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>980</x>
-      <y>310</y>
-      <w>162</w>
-      <h>210</h>
+      <x>940</x>
+      <y>300</y>
+      <w>136</w>
+      <h>220</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
               where
 m1=      1
-m2=         0..*</panel_attributes>
-    <additional_attributes>90;190;90;30</additional_attributes>
+m2=  0..*</panel_attributes>
+    <additional_attributes>90;200;90;50;30;50</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>370</x>
+      <x>270</x>
       <y>680</y>
       <w>100</w>
       <h>30</h>
@@ -156,79 +156,65 @@ m2=         0..*</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>800</x>
-      <y>280</y>
-      <w>170</w>
-      <h>70</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-taught by
-m1=1
-m2=1</panel_attributes>
-    <additional_attributes>30;50;150;50</additional_attributes>
-  </element>
-  <element>
-    <type>com.umlet.element.Relation</type>
-    <coordinates>
-      <x>220</x>
+      <x>180</x>
       <y>250</y>
-      <w>264</w>
+      <w>170</w>
       <h>180</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
                          has / can edit
 m1=0..*
 m2=1</panel_attributes>
-    <additional_attributes>100;160;140;160;140;30;210;30</additional_attributes>
+    <additional_attributes>40;160;80;160;80;30;150;30</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>560</x>
+      <x>500</x>
       <y>370</y>
-      <w>230</w>
+      <w>190</w>
       <h>100</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
                  can edit
-m1=       0..*
+m1=    0..*
 m2=0..*</panel_attributes>
-    <additional_attributes>100;30;100;80;210;80</additional_attributes>
+    <additional_attributes>60;30;60;80;170;80</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>650</x>
+      <x>570</x>
       <y>440</y>
-      <w>238</w>
+      <w>200</w>
       <h>330</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 can edit
 m1=         0..*
 m2=         0..*</panel_attributes>
-    <additional_attributes>50;310;50;200;200;200;200;30</additional_attributes>
+    <additional_attributes>30;310;30;200;180;200;180;30</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>840</x>
-      <y>310</y>
-      <w>224</w>
-      <h>160</h>
+      <x>740</x>
+      <y>320</y>
+      <w>178</w>
+      <h>150</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 can edit                  
-m1=       0..*
+m1=    0..*
 m2=0..*</panel_attributes>
-    <additional_attributes>130;30;130;140;30;140</additional_attributes>
+    <additional_attributes>130;30;130;130;30;130</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>340</x>
+      <x>240</x>
       <y>130</y>
-      <w>174</w>
+      <w>168</w>
       <h>160</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
@@ -240,21 +226,21 @@ m2=0..*</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>180</x>
+      <x>120</x>
       <y>160</y>
-      <w>184</w>
+      <w>108</w>
       <h>260</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
                 can edit
 m1=          0..*
 m2=          0..*</panel_attributes>
-    <additional_attributes>100;240;100;30</additional_attributes>
+    <additional_attributes>60;240;60;30</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>210</x>
+      <x>110</x>
       <y>400</y>
       <w>110</w>
       <h>30</h>
@@ -265,7 +251,7 @@ m2=          0..*</panel_attributes>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>600</x>
+      <x>500</x>
       <y>560</y>
       <w>110</w>
       <h>30</h>
@@ -277,88 +263,63 @@ m2=          0..*</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>240</x>
+      <x>160</x>
       <y>400</y>
-      <w>340</w>
+      <w>320</w>
       <h>380</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
            to
 m1=1
 m2=        0..*</panel_attributes>
-    <additional_attributes>320;360;60;360;60;30</additional_attributes>
+    <additional_attributes>300;360;40;360;40;30</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>480</x>
+      <x>440</x>
       <y>370</y>
-      <w>276</w>
+      <w>150</w>
       <h>210</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 does / can edit                          
 m1=         0..*
 m2=    1</panel_attributes>
-    <additional_attributes>140;190;140;30</additional_attributes>
+    <additional_attributes>80;190;80;30</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>590</x>
+      <x>500</x>
       <y>560</y>
-      <w>98</w>
+      <w>70</w>
       <h>210</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
       of
 m1=         0..*
 m2=         1..*</panel_attributes>
-    <additional_attributes>50;190;50;30</additional_attributes>
+    <additional_attributes>40;190;40;30</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>620</x>
+      <x>540</x>
       <y>440</y>
-      <w>208</w>
+      <w>170</w>
       <h>140</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 can edit
 m1=         0..*
 m2=         0..*</panel_attributes>
-    <additional_attributes>50;120;50;80;170;80;170;30</additional_attributes>
+    <additional_attributes>30;120;30;80;150;80;150;30</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>730</x>
-      <y>320</y>
-      <w>100</w>
-      <h>30</h>
-    </coordinates>
-    <panel_attributes>Lecturer</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <type>com.umlet.element.Relation</type>
-    <coordinates>
-      <x>640</x>
-      <y>320</y>
-      <w>170</w>
-      <h>80</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-is              
-m1=1
-m2=    1</panel_attributes>
-    <additional_attributes>30;60;110;60;110;30</additional_attributes>
-  </element>
-  <element>
-    <type>com.umlet.element.Class</type>
-    <coordinates>
-      <x>690</x>
+      <x>590</x>
       <y>140</y>
       <w>130</w>
       <h>30</h>
@@ -369,37 +330,37 @@ m2=    1</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>400</x>
+      <x>350</x>
       <y>110</y>
-      <w>310</w>
+      <w>260</w>
       <h>180</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
                       has / can edit
 m1=0..*
 m2=    1</panel_attributes>
-    <additional_attributes>290;50;130;50;130;160</additional_attributes>
+    <additional_attributes>240;50;80;50;80;160</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>790</x>
+      <x>690</x>
       <y>110</y>
-      <w>242</w>
-      <h>220</h>
+      <w>240</w>
+      <h>230</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 to
 m1=     1
 m2=1</panel_attributes>
-    <additional_attributes>210;200;210;50;30;50</additional_attributes>
+    <additional_attributes>210;210;210;50;30;50</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>620</x>
+      <x>520</x>
       <y>200</y>
-      <w>244</w>
+      <w>230</w>
       <h>190</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
@@ -411,37 +372,37 @@ m2=    1</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>370</x>
+      <x>290</x>
       <y>270</y>
-      <w>144</w>
+      <w>108</w>
       <h>180</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 can edit       
 m1=       0..*
 m2=       0..*</panel_attributes>
-    <additional_attributes>100;30;100;110;60;110;60;160</additional_attributes>
+    <additional_attributes>80;30;80;110;40;110;40;160</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>430</x>
+      <x>350</x>
       <y>430</y>
-      <w>188</w>
+      <w>150</w>
       <h>340</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 can edit
 m1=         0..*
 m2=         0..*</panel_attributes>
-    <additional_attributes>150;320;150;210;50;210;50;30</additional_attributes>
+    <additional_attributes>130;320;130;210;30;210;30;30</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>460</x>
+      <x>360</x>
       <y>370</y>
-      <w>208</w>
+      <w>168</w>
       <h>90</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
@@ -453,23 +414,23 @@ m2=0..*</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>290</x>
+      <x>230</x>
       <y>430</y>
-      <w>196</w>
+      <w>112</w>
       <h>270</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
                  can alter
 m1=         0..*
 m2=         0..*</panel_attributes>
-    <additional_attributes>100;250;100;30</additional_attributes>
+    <additional_attributes>60;250;60;30</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>730</x>
+      <x>630</x>
       <y>180</y>
-      <w>252</w>
+      <w>236</w>
       <h>590</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
@@ -481,9 +442,9 @@ m2=0..*</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>480</x>
+      <x>380</x>
       <y>200</y>
-      <w>334</w>
+      <w>320</w>
       <h>160</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
@@ -491,5 +452,32 @@ m2=0..*</panel_attributes>
 m1=     1
 m2=        0..*</panel_attributes>
     <additional_attributes>30;100;30;140;140;140;140;60;300;60;300;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>540</x>
+      <y>310</y>
+      <w>330</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+          
+           teaches at</panel_attributes>
+    <additional_attributes>310;30;180;30;180;80;30;80</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>710</x>
+      <y>440</y>
+      <w>290</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+       can edit                  
+m1=0..*
+m2=    0..*</panel_attributes>
+    <additional_attributes>270;80;60;80;60;30</additional_attributes>
   </element>
 </diagram>
