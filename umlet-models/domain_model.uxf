@@ -9,7 +9,7 @@
       <w>130</w>
       <h>30</h>
     </coordinates>
-    <panel_attributes>Študent</panel_attributes>
+    <panel_attributes>Student</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -20,7 +20,7 @@
       <w>110</w>
       <h>30</h>
     </coordinates>
-    <panel_attributes>Správca</panel_attributes>
+    <panel_attributes>Spravca</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -31,7 +31,7 @@
       <w>160</w>
       <h>50</h>
     </coordinates>
-    <panel_attributes>Pracovník študijného
+    <panel_attributes>Pracovnik studijneho
 oddelenia</panel_attributes>
     <additional_attributes/>
   </element>
@@ -43,7 +43,7 @@ oddelenia</panel_attributes>
       <w>100</w>
       <h>30</h>
     </coordinates>
-    <panel_attributes>Tajomník</panel_attributes>
+    <panel_attributes>Tajomnik</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -54,7 +54,7 @@ oddelenia</panel_attributes>
       <w>100</w>
       <h>30</h>
     </coordinates>
-    <panel_attributes>Učiteľ</panel_attributes>
+    <panel_attributes>Ucitel</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -76,7 +76,7 @@ oddelenia</panel_attributes>
       <w>130</w>
       <h>30</h>
     </coordinates>
-    <panel_attributes>Rozvrhový lístok</panel_attributes>
+    <panel_attributes>Rozvrhovy listok</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -88,7 +88,7 @@ oddelenia</panel_attributes>
       <h>460</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-patrí ku                
+patri ku                
 m1=1
 m2=        1..*</panel_attributes>
     <additional_attributes>30;440;250;440;250;30</additional_attributes>
@@ -113,7 +113,7 @@ m2=        1..*</panel_attributes>
       <h>120</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-                              vie zobraziť svoje
+                              vie zobrazit svoje
 m2=1
 m1=0..*  </panel_attributes>
     <additional_attributes>340;30;160;30;160;100;130;100</additional_attributes>
@@ -126,7 +126,7 @@ m1=0..*  </panel_attributes>
       <w>90</w>
       <h>30</h>
     </coordinates>
-    <panel_attributes>Miestnosť</panel_attributes>
+    <panel_attributes>Miestnost</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -163,7 +163,7 @@ m2=  0..*</panel_attributes>
       <h>180</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-               vytvára
+               vytvara
 m1=0..*
 m2=1</panel_attributes>
     <additional_attributes>50;160;90;160;90;30;160;30</additional_attributes>
@@ -247,7 +247,7 @@ m2=          0..*</panel_attributes>
       <w>110</w>
       <h>30</h>
     </coordinates>
-    <panel_attributes>Zápisný list</panel_attributes>
+    <panel_attributes>Zapisny list</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -273,7 +273,7 @@ m2=0..*          </panel_attributes>
       <h>400</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-          vyučuje
+          vyucuje
 m1=         1..*
 m2=       1..*</panel_attributes>
     <additional_attributes>90;380;90;170;70;170;70;30</additional_attributes>
@@ -287,7 +287,7 @@ m2=       1..*</panel_attributes>
       <h>230</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-je zapísaný na
+je zapisany na
 m1=        0..*
 m2=    1</panel_attributes>
     <additional_attributes>510;210;510;50;30;50;30;160</additional_attributes>
@@ -301,7 +301,7 @@ m2=    1</panel_attributes>
       <h>190</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-určuje
+urcuje
 m1=        0..*
 m2=    1</panel_attributes>
     <additional_attributes>210;30;210;110;30;110;30;170</additional_attributes>
@@ -367,14 +367,14 @@ m2=         0..*</panel_attributes>
     <coordinates>
       <x>710</x>
       <y>190</y>
-      <w>246</w>
+      <w>236</w>
       <h>590</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 pre        
 m1=     1
 m2=0..*</panel_attributes>
-    <additional_attributes>30;570;30;520;190;520;190;30;140;30</additional_attributes>
+    <additional_attributes>30;570;30;520;180;520;180;30;140;30</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
@@ -400,23 +400,25 @@ m2=        0..*</panel_attributes>
     </coordinates>
     <panel_attributes>lt=.&gt;
 
-                        je vyučovaný</panel_attributes>
+je vyucovany                        
+m1=1..*
+m2=1..*</panel_attributes>
     <additional_attributes>310;30;180;30;180;80;30;80</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>750</x>
+      <x>760</x>
       <y>450</y>
-      <w>320</w>
+      <w>310</w>
       <h>124</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 	
-          spravuje
-m1=0..*
+       spravuje
+m1=0..*  
 m2=           0..*</panel_attributes>
-    <additional_attributes>300;80;90;80;90;30</additional_attributes>
+    <additional_attributes>290;80;80;80;80;30</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
@@ -427,9 +429,9 @@ m2=           0..*</panel_attributes>
       <h>290</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-              patrí do
-m1=0..*
-m2=0..*</panel_attributes>
+              patri do
+m1=0..*  
+m2=        0..*</panel_attributes>
     <additional_attributes>160;270;140;270;90;270;90;150;90;30</additional_attributes>
   </element>
   <element>
@@ -462,7 +464,7 @@ m2=0..*</panel_attributes>
 	
 	
 	
-je súčasťou                        
+je sucastou                        
 m1=      1
 m2=          1..*</panel_attributes>
     <additional_attributes>120;530;120;420;170;420;170;30;50;30;50;100</additional_attributes>
