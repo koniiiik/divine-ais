@@ -22,3 +22,151 @@
 \subsection{Use case diagram}
 
 \includegraphics[width=\textwidth]{umlet-models/usecase.pdf}
+
+\begin{usecase}{UC-1: Zapíš na predmet}
+    \usecasegoal{Zapísanie študenta na predmet.}
+    \usecaseprimaryactor{Študent}
+    \usecasesecondaryactors{N/A}
+    \usecasestartevent{
+        \item Študent sa rozhodne zapísať sa na predmet.
+    }
+    \usecasepreconditions{
+        \item Študent ešte nemá daný predmet zapísaný.
+    }
+    \usecasepostconditions{
+        \item Študent má zapísaný predmet v systéme.
+    }
+    \usecasescenario{
+        \item Študent sa v systéme dostane do sekcie Zápis Predmetov
+        \item Následne si vyberie predmet a klikne na Potvrdiť.
+    }
+    \usecaseexcept{Nesplnené prerekvizity}{Študent si dal zapísať predmet,
+    ku ktorému nemá splnené všetky prerekvizvity}{
+        \item Systém užívateľa upozorní, že nemá splnené prerekvizity
+        \item Vráť sa ku kroku 1
+    }
+    \usecaseexcept{Prekročený limit kreditov}{Študent si dal zapísať
+    predmet, avšak súčet kreditov v danom roku prevyšuje maximálny počet
+    kreditov za rok.}{
+        \item Systém užívateľa upozorní, že počet kreditov by prevýšil maximálny počet kreditov za rok
+        \item Vráť sa ku kroku 1
+    }
+\end{usecase}
+
+\begin{usecase}{UC-2: Pridaj študenta}
+    \usecasegoal{Pridanie študenta do systému.}
+    \usecaseprimaryactor{Pracovník študijného oddelenia}
+    \usecasesecondaryactors{Študent}
+    \usecasestartevent{
+        \item Pracovník študijného oddelenia sa rozhodne pridať nového študenta do systému.
+    }
+    \usecasepreconditions{
+        \item Pridávaný študent nie je ešte v~systéme zaregistrovaný.
+    }
+    \usecasepostconditions{
+        \item Študent je v~systéme zaregistrovaný s jednoznačným identifikátorom.
+    }
+    \usecasescenario{
+        \item Pracovník študijného oddelenia sa v systéme dostane do sekcie Pridaj študenta
+        \item Následne zadá všetky údaje o študentovi, ktoré systém vyžaduje.
+        \item Klikne na tlačídlo Potvrdiť.
+    }
+    \usecaseexcept{Existujúci študent}{Pracovník študijného oddelenia chce
+    pridať študenta, ktorý je už v systéme zaregistrovaný.}{
+        \item Systém pracovníka upozorní, že tento študent už v systéme zaregistrovaný je
+        \item Vráť sa ku kroku 1
+    }
+    \usecaseexcept{Nesplnené podmienky}{Zadané údaje o študentovi
+    vypovedajú o tom, že študent nesplnil podmienky na zápis na školu (do
+    systému), ktoré sú zadané v systéme (napr. súčasné štúdium na inej
+    škole).}{
+        \item Systém pracovníka upozorní, že daný študent nespĺňa podmienky
+        \item Vráť sa ku kroku 1
+    }
+\end{usecase}
+
+\begin{usecase}{UC-3: Zapíš na rozvrhový lístok}
+    \usecasegoal{Zapísanie študenta na konkrétny rozvrhový lístok}
+    \usecaseprimaryactor{Študent}
+    \usecasesecondaryactors{Učiteľ}
+    \usecasestartevent{
+        \item Študent si vyberie konkrétny rozvrhový lístok, kde bude navštevovať predmet, ktorý je k danému rozvrhovému lístku.
+    }
+    \usecasepreconditions{
+        \item Študent ešte nemá vybraný rozvrhový lístok k danému predmetu.
+    }
+    \usecasepostconditions{
+        \item Študent má vybranú množinu rozvrhových lístkov k danému predmetu.
+    }
+    \usecasescenario{
+        \item Študent sa dostane v systéme do sekcie Vyber rozvrhový lístok
+        \item Systém ponúkne študentovi všetky rozvrhové lístky k danému predmetu
+        \item Študent si vyberie jeden alebo viac rozvrhových lístkov kliknutím na nich
+        \item Ak má vybrané všetky, klikne na tlačidlo Potvrdiť.
+    }
+    \usecaseexcept{Maximálny počet študentov}{Študent si vybral rozvrhový
+    lístok, kde je už maximálny počet študentov.}{
+        \item Systém študenta upozorní, že pri tomto rozvrhovom lístku je už zapísaný maximálny počet 	študentov.
+        \item Vráť sa ku kroku 1
+    }
+    \usecaseexcept{Kolízia s iným rozvrhovým lístkom}{Študent si vybral
+    rozvrhový lístok, ktorého čas sa kryje s nejakým iným rozvrhovým
+    lístkom iného predmetu, ktorý má zapísaný.}{
+        \item Systém študenta upozorní, aby si vybral iný rozvrhový lístok
+        \item Vráť sa ku kroku 1
+    }
+\end{usecase}
+
+\begin{usecase}{UC-4: Ohodnoť študenta}
+    \usecasegoal{Zadať do systému hodnotenie študenta.}
+    \usecaseprimaryactor{Učiteľ}
+    \usecasesecondaryactors{Študent}
+    \usecasestartevent{
+        \item Učiteľ chce zadať do systému hodnotenie študenta k predmetu, ktorý vyučuje.
+    }
+    \usecasepreconditions{
+        \item Učiteľ ešte nezadal hodnotenie študenta do systému.
+    }
+    \usecasepostconditions{
+        \item V systéme sa nachádza hodnotenie študenta k predmetu.
+    }
+    \usecasescenario{
+        \item Učiteľ sa dostane v systéme do sekcie Zadaj hodnotenie
+        \item Systém ponúkne učiteľovi zoznam predmetov, ktoré vyučuje.
+        \item Učiteľ si vyberie predmet, následne mu systém ponúkne zoznam študentov, ktorý majú predmet zapísaný.
+        \item Učiteľ si vyberie študenta.
+        \item Učiteľ zadá do systému hodnotenie A-Fx a klikne na tlačidlo potvrdiť.
+    }
+    \usecaseexcept{Hodnotenie už existuje.}{Učiteľ chce zadať hodnotenie študenta, ktorý v systéme už hodnotenie má.}{
+        \item Systém učiteľa upozorní, že už bol z tohto predmetu hodnotený.
+        \item Vráť sa ku kroku 4
+    }
+\end{usecase}
+
+\begin{usecase}{UC-5: Nastav nový semester}
+    \usecasegoal{Pridať do systému údaje o novom semestri.}
+    \usecaseprimaryactor{Správca}
+    \usecasesecondaryactors{N/A}
+    \usecasestartevent{
+        \item Administrátor chce pridať do systému nový semester.
+    }
+    \usecasepreconditions{
+        \item Semester ešte nie je v systéme.
+    }
+    \usecasepostconditions{
+        \item V systéme sa nachádza záznam o semestri s príslušnými údajmi.
+    }
+    \usecasescenario{
+        \item Administrátor sa v systéme dostane do sekcie Zadaj hodnotenie
+        \item Následne zadá všetky údaje o semestri (začiatok semestra, termíny vyučovania a skúškového obdobia atď.)
+        \item Klikne na tlačidlo Potvrdiť.
+    }
+    \usecaseexcept{Semester už existuje.}{Administrátor chcel pridať do systému semester, ktorý sa v ňom už nachádza.}{
+        \item Systém administrátora upozorní, že takýto semester sa už nachádza v systéme.
+        \item Vráť sa ku kroku 2
+    }
+    \usecaseexcept{Neplatné údaje o semestri}{Administrátor zadal neplatné údaje o semestri (zlý rok, prekrývajúc sa termíny jednotlivých období semestra atď.)}{
+        \item Systém administrátora upozorní na konkrétne konflikty.
+        \item Vráť sa ku kroku 2
+    }
+\end{usecase}
