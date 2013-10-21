@@ -170,3 +170,55 @@
         \item Vráť sa ku kroku 2
     }
 \end{usecase}
+
+\begin{usecase}{UC-6: Vytvoriť rozvrh}
+    \usecasegoal{vytvoriť rozvrh hodín a zadať ho do systému.}
+    \usecaseprimaryactor{Tajomník katedry}
+    \usecasesecondaryactors{N/A}
+    \usecasestartevent{
+        \item Tajomník katedry chce pridať do systému rozvrh hodín pre študijnú skupinu.
+    }
+    \usecasepreconditions{
+        \item Cieľová študijná skupina ešte nemá pridelený rozvrh.
+    }
+    \usecasepostconditions{
+        \item Cieľová študijná skupina má pridelený rozvrh.
+    }
+    \usecasescenario{
+        \item Tajomník katedry sa v systéme dostane do sekcie Pridaj rozvrh
+        \item Následne vytvorí rozvrh hodín v príslušnom užívateľskom prostredí.
+        \item Klikne na tlačidlo Potvrdiť.
+    }
+    \usecaseexcept{Rozvrh pre danú skupinu študentov už existuje.}{Tajomník katedry chcel pridať do systému rozvrh hodín študijnej skupiny, ktorá už rozvrh hodín pridelený má.}{
+        \item Systém tajomníka katedry upozorní, že daná študijná skupina 
+        \item Vráť sa ku kroku 2
+    }
+\end{usecase}
+
+\begin{usecase}{UC-7: Potvrď zápis predmetov}
+    \usecasegoal{Pridať do systému údaje o novom semestri.}
+    \usecaseprimaryactor{Pracovník študijného oddelenia}
+    \usecasesecondaryactors{Študent}
+    \usecasestartevent{
+        \item Študent si chce dať potvrdiť zápis predmetov na študijnom oddelení.
+    }
+    \usecasepreconditions{
+        \item Študent má zapísané predmety v systéme, ale nemá ich doposiaľ potvrdené.
+    }
+    \usecasepostconditions{
+        \item Študent má zapísané predmety aj potvrdené.
+    }
+    \usecasescenario{
+        \item Pracovník študijného oddelenia sa v systéme dostane do sekcie Potvrď zápis predmetov
+        \item Systém vykoná kontrolu zapísaných predmetov a overí, či platia všetky podmienky pre zápis predmetov.
+        \item Klikne na tlačidlo Potvrdiť.
+    }
+    \usecaseexcept{Študent už má potvrdený zápis.}{Študent si dal potvrdiť zápis predmetov, avšak zápis bol už vykonaný predtým.}{
+        \item Systém pracovníka študijného oddelenia upozorní, že už má zápis potvrdený.
+        \item Ukonči akciu.
+    }
+    \usecaseexcept{Nesplnené podmienky pre potvrdenie.}{Študent si nemôže dať potvrdiť zápis, pretože nie sú splnené všetky podmienky (nekonzistentnosť s indexom, málo kreditov atď.)}{
+        \item Pracovník študijného oddelenia odporučí študentovi čo má ešte opraviť v zápise, aby si mohol dať zápis potvrdiť.
+        \item Ukonči akciu.
+    }
+\end{usecase}
