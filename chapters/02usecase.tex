@@ -222,3 +222,148 @@
         \item Ukonči akciu.
     }
 \end{usecase}
+
+\begin{usecase}{UC­8: Prezri hodnotenie}
+    \usecasegoal{Študentovi sa zobrazia všetky existujúce hodnotenia k jeho predmetom.}
+    \usecaseprimaryactor{Študent}
+    \usecasesecondaryactors{N/A}
+    \usecasestartevent{
+        \item Študent si chce prezrieť svoje doterajšie hodnotenia.
+    }
+    \usecasepreconditions{
+        \item Študent má zapísané predmety.
+        \item Vyučujúci zadal hodnotenie študentovi aspoň z jedného predmetu, ktorý má študent zapísaný.  
+    }
+    \usecasepostconditions{
+        \item N/A 
+    }
+    \usecasescenario{
+        \item Študent sa dostane do sekcie Evidencie štúdia - Hodnotenia a priemery. 
+        \item Systém načíta jeho všetky zapísané predmety. Zobrazí k nim príslušné hodnotenie ak existuje a ak nie, tak vypíše N/A. 
+    }
+    \usecaseexcept{Študent nemá zapísaný predmet.}{Študent si chcel zobraziť hodnotenia, avšak ešte nemá zapísané predmety.}{
+        \item Systém študenta upozorní, že si najprv musí zapísať predmety. 
+        \item Ukonči akciu.
+    }
+    \usecaseexcept{Neexistuje hodnotenie študenta.}{Študent má zapísaný aspoň jeden predmet, ale vyučujúci mu ešte nezadal hodnotenie. }{
+        \item Systém študenta upozorní, že dosiaľ nemá žiadne hodnotenia. 
+        \item Zobraz všetky zapísané predmety. 
+        \item Ukonči akciu. 
+    }
+\end{usecase}
+ 
+\begin{usecase}{UC­9: Prezri rozvrh}
+    \usecasegoal{Študentovi sa zobrazí jeho rozvrh.}
+    \usecaseprimaryactor{Študent}
+    \usecasesecondaryactors{N/A}
+    \usecasestartevent{
+        \item Študent si chce prezrieť svoj aktuálny rozvrh.
+    }
+    \usecasepreconditions{
+        \item Študent má zapísané predmety.
+        \item Je vytvorený rozvrh na aktuálny semester.
+        \item Študent má zapísaný aspoň jeden rozvrhový lístok.  
+    }
+    \usecasepostconditions{
+        \item N/A
+    }
+    \usecasescenario{
+        \item Študent sa dostane do sekcie Evidencie štúdia - Rozvrh. 
+        \item Systém načíta všetky rozvrhové lístky, ktoré má študent zapísané v aktuálnom semestri a zobrazí ich ako kalendár. 
+    }
+    \usecaseexcept{Neexistuje rozvrh.}{Tajomník nevytvoril rozvrh k aktuálnemu semestru.}{
+        \item Systém študenta upozorní, že zatiaľ nie je možné zobraziť rozvrhové lístky, lebo ešte nebol vytvorený rozvrh pre aktuálny semester. 
+        \item Systém zobrazí prázdny kalendár. 
+        \item Ukonči akciu. 
+    }
+    \usecaseexcept{Neexistuje zapísaný rozvrhový lístok.}{Študent ešte nemá zapísaný rozvrhový lístok.}{
+        \item Systém študenta upozorní, že si najprv musí zapísať rozvrhový lístok. 
+        \item Systém zobrazí prázdny kalendár. 
+        \item Ukonči akciu. 
+    }
+\end{usecase}
+	
+\begin{usecase}{UC­10: Pridaj nový predmet}
+    \usecasegoal{Pridať do systému nový predmet.}
+    \usecaseprimaryactor{Tajomník}
+    \usecasesecondaryactors{Učiteľ}
+    \usecasestartevent{
+        \item Tajomník chce pridať nový predmet do ponuky predmetov.
+    }
+    \usecasepreconditions{
+        \item Učiteľ súhlasil s výukou predmetu.
+    }
+    \usecasepostconditions{
+        \item Predmet je evidovaný v systéme, má jednoznačný identifikátor a je viditeľný v ponuke predmetov.
+    }
+    \usecasescenario{
+        \item Tajomník sa v systéme dostane do sekcie pridaj predmet a vyplní základné údaje ako názov, kód, učiteľ predmetu, atď. .
+        \item Systém upozorní učiteľa (ktorého zvolil ako vyučujúceho tajomník v kroku 1), aby súhlasil s výukou predmety a doplnil ďalšie údaje ako sylabus, typ výuky, atď. .  
+        \item Učiteľ potvrdí údaje a súhlasí s pridaním predmetu.
+        \item Tajomník potvrdí údaje a súhlasí s pridaním predmetu. 
+    }
+    \usecaseexcept{Učiteľ nesúhlasí.}{Učiteľ nesúhlasí s výukou pridávaného predmetu.}{
+        \item Systém upozorní tajomníka, že učiteľ nesúhlasil s výukou predmetu.
+        \item Učiteľ sa s tajomníkom dohodnú, či bude predmet vytvorený. 
+        \item Ak áno, pokračuje sa od kroku 2. Ak nie, tak sa všetky doposiaľ vyplnené údaje zrušia a predmet sa do systému nepridá. 
+        \item Ukonči akciu. 
+    }
+    \usecaseexcept{Tajomník nesúhlasí.}{Tajomník klikol na tlačidlo nesúhlasím v kroku 4.}{
+        \item Tajomník zadá dôvody, pre ktoré odmietol predmet pridať. 
+        \item Učiteľ buď upraví údaje a pokračuje sa krokom 3, alebo sa po dohode s tajomníkom pridávanie predmetu zruší, ako v prípade Výnimka 1 - Krok 3. 
+    }
+\end{usecase}
+
+\begin{usecase}{UC­11: Pridaj externého študenta}
+    \usecasegoal{Pridanie externého študenta do systému.}
+    \usecaseprimaryactor{Pracovník študijného oddelenia}
+    \usecasesecondaryactors{Externý študent}
+    \usecasestartevent{
+        \item Pracovník študijného oddelenia sa rozhodne pridať nového externého študenta do systému.
+    }
+    \usecasepreconditions{
+        \item Pridávaný externý študent nie je ešte v systéme zaregistrovaný.
+    }
+    \usecasepostconditions{
+        \item Externý študent je v systéme zaregistrovaný s jednoznačným identifikátorom.
+    }
+    \usecasescenario{
+        \item Pracovník študijného oddelenia sa v systéme dostane do sekcie Pridaj externého študenta. 
+        \item Následne zadá všetky údaje o externom študentovi, ktoré systém vyžaduje.
+        \item Klikne na tlačidlo Potvrdiť.
+    }
+    \usecaseexcept{Existujúci externý študent.}{Pracovník študijného oddelenia chce pridať externého študenta, ktorý je už v systéme zaregistrovaný.}{
+        \item Systém pracovníka upozorní, že tento externý študent už v systéme zaregistrovaný je. 
+        \item Vráť sa ku kroku 1. 
+    }
+    \usecaseexcept{Nesplnené podmienky.}{Niektoré údaje zadané pracovníkom študíjneho oddelenia nespĺňajú podmienky. }{
+        \item Systém pracovníka upozorní, že daný externý študent nespĺňa podmienky.
+        \item Vráť sa ku kroku 1. 
+    }
+\end{usecase}
+ 
+\begin{usecase}{UC­12: Nastav harmonogram semestra}
+    \usecasegoal{Pridať do systému dôležité termíny semestra.}
+    \usecaseprimaryactor{Administrátor}
+    \usecasesecondaryactors{N/A}
+    \usecasestartevent{
+        \item Administrátor chce zadať dôležité termíny semestra, napríklad pri vytváraní nového semestra.
+    }
+    \usecasepreconditions{
+        \item Daný semester ešte nemá nastavené termíny.
+    }
+    \usecasepostconditions{
+        \item Termíny sú zadané v systéme a ďalej sa využívajú, ako napríklad obdobie zápisu.
+    }
+    \usecasescenario{
+        \item Administrátor sa v systéme dostane do sekcie Semester - Zadaj harmonogram semestra. 
+        \item Následne administrátor zadá všetky dôležité termíny semestra, ako napríklad skúškové obdobie, obdobie zápisu, prázdniny, atď. .
+    }
+    \usecaseexcept{Termíny už existujú.}{Administrátor chce nastaviť termíny semestru, ktorý už má zadaný harmonogram.}{
+        \item Systém administrátora upozorní, že tento semester už má zadané termíny a opýta sa ho, či chce naozaj pokračovať, keďže zmena ovplyvní celý systém. 
+        \item Ak administrátor nechce ďalej pokračovať, tak systém ukončí akciu. Ak administrátor chce ďalej pokračovať, tak sa vykoná krok 2. 
+        \item Systém upozorní všetkých užívateľov systému, ktorých sa zmena týka. 
+        \item Ukonči akciu.
+    }
+\end{usecase}
+
