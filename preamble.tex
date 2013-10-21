@@ -45,5 +45,31 @@
     pdfkeywords = {OOAM} {UML} {AIS}
 }
 
+% Define macros for use case descriptions
+% First, define the required counters.
+\newcounter{usecasenumber}
+\newcounter{usecasealtern}[usecasenumber]
+\newcounter{usecaseexception}[usecasenumber]
+\newenvironment{usecase}[1]{\subsection{#1}\stepcounter{usecasenumber}\stepcounter{usecasealtern}\stepcounter{usecaseexception}\begin{description}}{\end{description}}
+\newcommand{\usecasegoal}[1]{\item[Cieľ:] #1}
+\newcommand{\usecaseprimaryactor}[1]{\item[Primárny aktér:] #1}
+\newcommand{\usecasesecondaryactors}[1]{\item[Sekundárny aktér:] #1}
+\newcommand{\usecasestartevent}[1]{\item[Udalosť spustenia:] \mbox{}\\
+        \begin{enumerate}#1\end{enumerate}}
+\newcommand{\usecasepreconditions}[1]{\item[Počiatočné podmienky:] \mbox{}\\
+        \begin{enumerate}#1\end{enumerate}}
+\newcommand{\usecasepostconditions}[1]{\item[Koncové podmienky:] \mbox{}\\
+        \begin{enumerate}#1\end{enumerate}}
+\newcommand{\usecasescenario}[1]{\item[Základný scenár:] \mbox{}\\
+        \begin{enumerate}#1\end{enumerate}}
+\newcommand{\usecaseexcept}[3]{\item[Výnimka \arabic{usecaseexception}:]
+        \stepcounter{usecaseexception} \mbox{}#1\\
+        \emph{Udalosť spustenia:} #2
+        \begin{enumerate}#3\end{enumerate}}
+\newcommand{\usecasealtern}[2]{\item[Alternatívny scenár \arabic{usecasealtern}:]
+        \stepcounter{usecaseexception} \mbox{}\\
+        \emph{Udalosť spustenia:} #1
+        \begin{enumerate}#2\end{enumerate}}
+
 \begin{document}
 \maketitle
