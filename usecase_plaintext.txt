@@ -102,3 +102,53 @@ Udalos spustenia: Administrátor zadal neplatné údaje o semestri (zlı rok, prekr
 	1. Systém administrátora upozorní na konkrétne konflikty.
 	2. Vrá sa ku kroku 2
 
+
+
+
+ 
+UC­6: Vytvori rozvrh
+Cie¾: vytvori rozvrh hodín a zada ho do systému.
+Primárny aktér: Tajomník katedry
+Sekundárni aktéri: N/A
+Udalos spustenia:
+1. Tajomník katedry chce prida do systému rozvrh hodín pre študijnú skupinu.
+Poèiatoèné podmienky:
+1. Cie¾ová študijná skupina ešte nemá pridelenı rozvrh.
+Koncové podmienky:
+1. Cie¾ová študijná skupina má pridelenı rozvrh.
+Základnı scenár:
+1. Tajomník katedry sa v systéme dostane do sekcie Pridaj rozvrh
+2. Následne vytvorí rozvrh hodín v príslušnom uívate¾skom prostredí.
+3. Klikne na tlaèidlo Potvrdi.
+Vınimka 1: Rozvrh pre danú skupinu študentov u existuje.
+Udalos spustenia: Tajomník katedry chcel prida do systému rozvrh hodín študijnej skupiny, ktorá u rozvrh hodín pridelenı má.
+	1. Systém tajomníka katedry upozorní, e daná študijná skupina 
+	2. Vrá sa ku kroku 2
+
+
+
+
+ 
+UC­7: Potvrï zápis predmetov
+Cie¾: Prida do systému údaje o novom semestri.
+Primárny aktér: Pracovník študijného oddelenia
+Sekundárni aktéri: Študent
+Udalos spustenia:
+1. Študent si chce da potvrdi zápis predmetov na študijnom oddelení.
+Poèiatoèné podmienky:
+1. Študent má zapísané predmety v systéme, ale nemá ich doposia¾ potvrdené.
+Koncové podmienky:
+1. Študent má zapísané predmety aj potvrdené.
+Základnı scenár:
+1. Pracovník študijného oddelenia sa v systéme dostane do sekcie Potvrï zápis predmetov
+2. Systém vykoná kontrolu zapísanıch predmetov a overí, èi platia všetky podmienky pre zápis predmetov.
+3. Klikne na tlaèidlo Potvrdi.
+Vınimka 1: Študent u má potvrdenı zápis.
+Udalos spustenia: Študent si dal potvrdi zápis predmetov, avšak zápis bol u vykonanı predtım.
+	1. Systém pracovníka študijného oddelenia upozorní, e u má zápis potvrdenı.
+	2. Ukonèi akciu.
+Vınimka 2: Nesplnené podmienky pre potvrdenie,
+Udalos spustenia: Študent si nemôe da potvrdi zápis, pretoe nie sú splnené všetky podmienky (nekonzistentnos s indexom, málo kreditov atï.)
+	1. Pracovník študijného oddelenia odporuèí študentovi èo má ešte opravi v zápise, aby si mohol da zápis potvrdi.
+	2. Ukonèi akciu.
+ 
