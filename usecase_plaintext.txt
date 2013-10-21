@@ -152,3 +152,125 @@ Udalos spustenia: Študent si nemôe da potvrdi zápis, pretoe nie sú splnené 
 	1. Pracovník študijného oddelenia odporuèí študentovi èo má ešte opravi v zápise, aby si mohol da zápis potvrdi.
 	2. Ukonèi akciu.
  
+
+
+
+
+UC­8: Prezri hodnotenie
+Cie¾: Študentovi sa zobrazia všetky existujúce hodnotenia k jeho predmetom.
+Primárny aktér: Študent
+Sekundárni aktéri: N/A
+Udalos spustenia:
+1. Študent si chce prezrie svoje doterajšie hodnotenia.
+Poèiatoèné podmienky:
+1. Študent má zapísané predmety.
+2. Vyuèujúci zadal hodnotenie študentovi aspoò z jedného predmetu, ktorı má študent zapísanı. 
+Koncové podmienky:
+N/A 
+Základnı scenár:
+1. Študent sa dostane do sekcie Evidencie štúdia - Hodnotenia a priemery. 
+2. Systém naèíta jeho všetky zapísané predmety. Zobrazí k nim príslušné hodnotenie ak existuje a ak nie, tak vypíše N/A. 
+Vınimka 1: Študent nemá zapísanı predmet.
+Udalos spustenia: Študent si nechal zobrazi hodnotenia, avšak ešte nemá zapísané predmety.
+	1. Systém študenta upozorní, e si najprv musí zapísa predmety. 
+	2. Ukonèi akciu.
+Vınimka 2: Vyuèujúci ešte nezadal hodnotenie k predmetu študenta. 
+Udalos spustenia: Študent má zapísanı aspoò jeden predmet, ale vyuèujúci mu ešte nezadal hodnotenie. 
+	1. Systém študenta upozorní, e dosia¾ nemá iadne hodnotenia. 
+	2. Zobraz všetky zapísané predmety. 
+	3. Ukonèi akciu. 
+
+ 
+UC­9: Prezri rozvrh
+Cie¾: Študentovi sa zobrazí jeho rozvrh.
+Primárny aktér: Študent 
+Sekundárni aktéri: N/A 
+Udalos spustenia:
+1. Študent si chce prezrie svoj aktuálny rozvrh.
+Poèiatoèné podmienky:
+1. Študent má zapísané predmety.
+2. Je vytvorenı rozvrh na aktuálny semester.
+3. Študent má zapísanı aspoò jeden rozvrhovı lístok.  
+Koncové podmienky:
+N/A 
+Základnı scenár:
+1. Študent sa dostane do sekcie Evidencie štúdia - Rozvrh. 
+2. Systém naèíta všetky rozvrhové lístky, ktoré má študent zapísané v aktuálnom semestri a zobrazí ich ako kalendár. 
+Vınimka 1: Tajomník nevytvoril rozvrh k aktuálnemu semestru. 
+Udalos spustenia: Študent má zapísanı aspoò jeden predmet, ale vyuèujúci mu ešte nezadal hodnotenie. 
+	1. Systém študenta upozorní, e zatia¾ nie je moné zobrazi rozvrhové lístky, lebo ešte nebol vytvorenı rozvrh pre aktuálny semester. 
+	2. Systém zobrazí prázdny kalendár. 
+	3. Ukonèi akciu. 
+Vınimka 2: Študent nemá zapísanı rozvrhovı lístok.
+Udalos spustenia: Študent si nechal zobrazi hodnotenia, avšak ešte nemá zapísanı iadny rozvrhovı lístok v aktuálnom semestri.
+	1. Systém študenta upozorní, e si najprv musí zapísa rozvrhovı lístok. 
+	2. Systém zobrazí prázdny kalendár. 
+	3. Ukonèi akciu. 
+UC­10: Pridaj novı predmet
+Cie¾: Prida do systému novı predmet.
+Primárny aktér: Tajomník
+Sekundárni aktéri: Uèite¾
+Udalos spustenia:
+1. Tajomník chce prida novı predmet do ponuky predmetov.
+Poèiatoèné podmienky:
+1. Uèite¾ súhlasil s vıukou predmetu.
+Koncové podmienky:
+1. Predmet je evidovanı v systéme, má jednoznaènı identifikátor a je vidite¾nı v ponuke predmetov.
+Základnı scenár:
+1. Tajomník sa v systéme dostane do sekcie pridaj predmet a vyplní základné údaje ako názov, kód, uèite¾ predmetu, atï. .
+2. Systém upozorní uèite¾a (ktorého zvolil ako vyuèujúceho tajomník v kroku 1), aby súhlasil s vıukou predmety a doplnil ïalšie údaje ako sylabus, typ vıuky, atï. .  
+3. Uèite¾ potvrdí údaje a súhlasí s pridaním predmetu.
+4. Tajomník potvrdí údaje a súhlasí s pridaním predmetu. 
+Vınimka 1: Uèite¾ nesúhlasí s vıukou pridávaného predmetu.
+Udalos spustenia: Uèite¾ klikne na tlaèidlo Nesúhlasím v kroku 3. 
+	1. Systém upozorní tajomníka, e uèite¾ nesúhlasil s vıukou predmetu.
+	2. Uèite¾ sa s tajomníkom dohodnú, èi bude predmet vytvorenı. 
+	3. Ak áno, pokraèuje sa od kroku 2. Ak nie, tak sa všetky doposia¾ vyplnené údaje zrušia a predmet sa do systému nepridá. 
+	4. Ukonèi akciu. 
+Vınimka 2: Tajomník nesúhlasí s údajmi, ktoré vyplnil uèite¾ v kroku 3.
+Udalos spustenia: Tajomník klikol na tlaèidlo nesúhlasím v kroku 4. 
+	1. Tajomník zadá dôvody, pre ktoré odmietol predmet prida. 
+	2. Uèite¾ buï upraví údaje a pokraèuje sa krokom 3, alebo sa po dohode s tajomníkom pridávanie predmetu zruší, ako v prípade Vınimka 1 - Krok 3. 
+UC­11: Pridaj externého študenta
+Cie¾: Pridanie externého študenta do systému.
+Primárny aktér: Pracovník študijného oddelenia
+Sekundárni aktéri: Externı študent. 
+Udalos spustenia:
+1. Pracovník študijného oddelenia sa rozhodne prida nového externého študenta do systému.
+Poèiatoèné podmienky:
+1. Pridávanı externı študent nie je ešte v systéme zaregistrovanı.
+Koncové podmienky:
+1. Externı študent je v systéme zaregistrovanı s jednoznaènım identifikátorom.
+Základnı scenár:
+1. Pracovník študijného oddelenia sa v systéme dostane do sekcie Pridaj externého študenta
+2. Následne zadá všetky údaje o externom študentovi, ktoré systém vyaduje.
+3. Klikne na tlaèidlo Potvrdi.
+Vınimka 1: Existujúci externı študent
+Udalos spustenia: Pracovník študijného oddelenia chce prida externého študenta, ktorı je u v systéme zaregistrovanı,
+	1. Systém pracovníka upozorní, e tento externı študent u v systéme zaregistrovanı je
+	2. Vrá sa ku kroku 1
+Vınimka 2: Nesplnené podmienky
+Udalos spustenia: Zadané údaje o externom študentovi vypovedajú o tom, e externı študent nesplnil podmienky na zápis na školu (do systému), ktoré sú zadané v systéme (napr. súèasné štúdium na inej škole):
+	1. Systém pracovníka upozorní, e danı externı študent nespåòa podmienky
+	2. Vrá sa ku kroku 1
+ 
+UC­12: Nastav harmonogram semestra
+Cie¾: Prida do systému dôleité termíny semestra.
+Primárny aktér: Administrátor
+Sekundárni aktéri: N/A
+Udalos spustenia:
+1. Administrátor chce zada dôleité termíny semestra, napríklad pri vytváraní nového semestra.
+Poèiatoèné podmienky:
+1. Danı semester ešte nemá nastavené termíny.
+Koncové podmienky:
+1. Termíny sú zadané v systéme a ïalej sa vyuívajú, ako napríklad obdobie zápisu.
+Základnı scenár:
+1. Administrátor sa v systéme dostane do sekcie Semester - Zadaj harmonogram semestra. 
+2. Následne administrátor zadá všetky dôleité termíny semestra, ako napríklad skúškové obdobie, obdobie zápisu, prázdniny, atï. .
+Vınimka 1: Zvolenı semester u má zadané termíny.
+Udalos spustenia: Administrátor chce nastavi termíny semestru, ktorı u má zadanı harmonogram. 
+1. Systém administrátora upozorní, e tento semester u má zadané termíny a opıta sa ho, èi chce naozaj pokraèova, keïe zmena ovplyvní celı systém. 
+2. Ak administrátor nechce ïalej pokraèova, tak systém ukonèí akciu. Ak administrátor chce ïalej pokraèova, tak sa vykoná krok 2. 
+3. Systém upozorní všetkıch uívate¾ov systému, ktorıch sa zmena tıka. 
+4. Ukonèi akciu.
+
