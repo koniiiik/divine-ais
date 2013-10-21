@@ -1,0 +1,22 @@
+UC­2: Pridaj študenta
+Cie¾: Pridanie študenta do systému.
+Primárny aktér: Pracovník študijného oddelenia
+Sekundárni aktéri: Študent
+Udalos spustenia:
+1. Pracovník študijného oddelenia sa rozhodne prida nového študenta do systému.
+Poèiatoèné podmienky:
+1. Pridávanı študent nie je ešte v systéme zaregistrovanı.
+Koncové podmienky:
+1. Študent je systéme zaregistrovanı s jednoznaènım identifikátorom.
+Základnı scenár:
+1. Pracovník študijného oddelenia sa v systéme dostane do sekcie Pridaj študenta
+2. Následne zadá všetky údaje o študentovi, ktoré systém vyaduje.
+3. Klikne na tlaèídlo Potvrdi.
+Vınimka 1: Existujúci študent
+Udalos spustenia: Pracovník študijného oddelenia chce prida študenta, ktorı je u v systéme zaregistrovanı,
+	1. Systém pracovníka upozorní, e tento študent u v systéme zaregistrovanı je
+	2. Vrá sa ku kroku 1
+Vınimka 2: Nesplnené podmienky
+Udalos spustenia: Zadané údaje o študentovi vypovedajú o tom, e študent nesplnil podmienky na zápis na školu (do systému), ktoré sú zadané v systéme (napr. súèasné štúdium na inej škole):
+	1. Systém pracovníka upozorní, e danı študent nespåòa podmienky
+	2. Vrá sa ku kroku 1
