@@ -24,6 +24,8 @@ Udalos spustenia: Zadané údaje o študentovi vypovedajú o tom, e študent nespln
 
 
 
+
+
 UC­3: Zapíš na rozvrhovı lístok
 Cie¾: Zapísanie študenta na konkrétny rozvrhovı lístok
 Primárny aktér: Študent
@@ -47,3 +49,56 @@ Vınimka 2: Kolízia s inım rozvrhovım lístkom
 Udalos spustenia: Študent si vybral rozvrhovı lístok, ktorého èas sa kryje s nejakım inım rozvrhovım lístkom iného predmetu, ktorı má zapísanı.
 	1. Systém študenta upozorní, aby si vybral inı rozvrhovı lístok
 	2. Vrá sa ku kroku 1
+
+
+
+UC­4: Ohodno študenta
+Cie¾: Zada do systému hodnotenie študenta.
+Primárny aktér: Uèite¾
+Sekundárni aktéri: Študent
+Udalos spustenia:
+1. Uèite¾ chce zada do systému hodnotenie študenta k predmetu, ktorı vyuèuje.
+Poèiatoèné podmienky:
+1. Uèite¾ ešte nezadal hodnotenie študenta do systému.
+Koncové podmienky:
+1. V systéme sa nachádza hodnotenie študenta k predmetu.
+Základnı scenár:
+1. Uèite¾ sa dostane v systéme do sekcie Zadaj hodnotenie
+2. Systém ponúkne uèite¾ovi zoznam predmetov, ktoré vyuèuje.
+3. Uèite¾ si vyberie predmet, následne mu systém ponúkne zoznam študentov, ktorı majú predmet zapísanı.
+4. Uèite¾ si vyberie študenta.
+5. Uèite¾ zadá do systému hodnotenie A-Fx a klikne na tlaèidlo potvrdi.
+Vınimka 1: Hodnotenie u existuje.
+Udalos spustenia: Uèite¾ chce zada hodnotenie študenta, ktorı v systéme u hodnotenie má.
+	1. Systém uèite¾a upozorní, e u bol z tohto predmetu hodnotenı.
+	2. Vrá sa ku kroku 4
+ 
+
+
+
+
+
+
+UC­5: Nastav novı semester
+Cie¾: Prida do systému údaje o novom semestri.
+Primárny aktér: Administrátor
+Sekundárni aktéri: N/A
+Udalos spustenia:
+1. Administrátor chce prida do systému novı semester.
+Poèiatoèné podmienky:
+1. Semester ešte nie je v systéme.
+Koncové podmienky:
+1. V systéme sa nachádza záznam o semestri s príslušnımi údajmi.
+Základnı scenár:
+1. Administrátor sa v systéme dostane do sekcie Zadaj hodnotenie
+2. Následne zadá všetky údaje o semestri (zaèiatok semestra, termíny vyuèovania a skúškového obdobia atï.)
+3. Klikne na tlaèidlo Potvrdi.
+Vınimka 1: Semester u existuje.
+Udalos spustenia: Administrátor chcel prida do systému semester, ktorı sa v òom u nachádza.
+	1. Systém administrátora upozorní, e takıto semester sa u nachádza v systéme.
+	2. Vrá sa ku kroku 2
+Vınimka 2: Neplatné údaje o semestri
+Udalos spustenia: Administrátor zadal neplatné údaje o semestri (zlı rok, prekrıvajúc sa termíny jednotlivıch období semestra atï.)
+	1. Systém administrátora upozorní na konkrétne konflikty.
+	2. Vrá sa ku kroku 2
+
