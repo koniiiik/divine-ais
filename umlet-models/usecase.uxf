@@ -9,7 +9,7 @@
       <w>72</w>
       <h>108</h>
     </coordinates>
-    <panel_attributes>Študent</panel_attributes>
+    <panel_attributes>Student</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -20,7 +20,7 @@
       <w>180</w>
       <h>108</h>
     </coordinates>
-    <panel_attributes>Učiteľ</panel_attributes>
+    <panel_attributes>Ucitel</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -31,7 +31,8 @@
       <w>198</w>
       <h>108</h>
     </coordinates>
-    <panel_attributes>Pracovník študijného oddelenia</panel_attributes>
+    <panel_attributes>Pracovnik studijneho
+oddelenia</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -42,7 +43,7 @@
       <w>180</w>
       <h>108</h>
     </coordinates>
-    <panel_attributes>Administrátor</panel_attributes>
+    <panel_attributes>Administrator</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -53,7 +54,7 @@
       <w>180</w>
       <h>108</h>
     </coordinates>
-    <panel_attributes>Tajomník katedry</panel_attributes>
+    <panel_attributes>Tajomnik katedry</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -64,7 +65,7 @@
       <w>198</w>
       <h>45</h>
     </coordinates>
-    <panel_attributes>UC-1: Zapíš na predmet</panel_attributes>
+    <panel_attributes>UC-1: Zapis na predmet</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -75,7 +76,7 @@
       <w>153</w>
       <h>54</h>
     </coordinates>
-    <panel_attributes>UC-2: Pridaj študenta</panel_attributes>
+    <panel_attributes>UC-2: Pridaj studenta</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -83,10 +84,10 @@
     <coordinates>
       <x>522</x>
       <y>198</y>
-      <w>216</w>
+      <w>234</w>
       <h>54</h>
     </coordinates>
-    <panel_attributes>UC-3: Zapíš na rozvrhový lístok</panel_attributes>
+    <panel_attributes>UC-3: Zapis na rozvrhovy listok</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -97,7 +98,7 @@
       <w>189</w>
       <h>54</h>
     </coordinates>
-    <panel_attributes>UC-4: Ohodnoť študenta</panel_attributes>
+    <panel_attributes>UC-4: Ohodnot studenta</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -108,7 +109,7 @@
       <w>207</w>
       <h>54</h>
     </coordinates>
-    <panel_attributes>UC-5: Nastav nový semester</panel_attributes>
+    <panel_attributes>UC-5: Nastav novy semester</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -119,7 +120,7 @@
       <w>189</w>
       <h>54</h>
     </coordinates>
-    <panel_attributes>UC-6: Vytvoriť rozvrh</panel_attributes>
+    <panel_attributes>UC-6: Vytvorit rozvrh</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -130,7 +131,7 @@
       <w>225</w>
       <h>54</h>
     </coordinates>
-    <panel_attributes>UC-7: Potvrď zápis predmetov</panel_attributes>
+    <panel_attributes>UC-7: Potvrd zapis predmetov</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -160,10 +161,10 @@
     <coordinates>
       <x>486</x>
       <y>675</y>
-      <w>189</w>
+      <w>207</w>
       <h>54</h>
     </coordinates>
-    <panel_attributes>UC-10: Pridaj nový predmet</panel_attributes>
+    <panel_attributes>UC-10: Pridaj novy predmet</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -174,7 +175,7 @@
       <w>252</w>
       <h>54</h>
     </coordinates>
-    <panel_attributes>UC-12: Pridaj externého študenta</panel_attributes>
+    <panel_attributes>UC-12: Pridaj externeho studenta</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -239,10 +240,10 @@
       <x>333</x>
       <y>657</y>
       <w>170</w>
-      <h>71</h>
+      <h>62</h>
     </coordinates>
     <panel_attributes/>
-    <additional_attributes>153;54;27;27</additional_attributes>
+    <additional_attributes>153;45;27;27</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
@@ -259,12 +260,12 @@
     <type>com.umlet.element.Relation</type>
     <coordinates>
       <x>333</x>
-      <y>621</y>
+      <y>612</y>
       <w>179</w>
-      <h>80</h>
+      <h>89</h>
     </coordinates>
     <panel_attributes/>
-    <additional_attributes>162;27;27;63</additional_attributes>
+    <additional_attributes>162;27;27;72</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
