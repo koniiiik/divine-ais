@@ -9,7 +9,7 @@ USECASE_PREREQUISUTES = chapters/02usecase.tex umlet-models/usecase.pdf
 
 default: full.pdf
 
-all: full.pdf domain.pdf
+all: full.pdf domain.pdf usecase.pdf
 
 full.pdf: full.tex $(COMMON_PREREQUISITES) $(DOMAIN_PREREQUISITES) $(USECASE_PREREQUISUTES)
 
