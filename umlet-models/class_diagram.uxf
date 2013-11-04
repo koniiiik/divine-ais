@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="11.5">
+  <zoom_level>7</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>140</x>
+      <y>77</y>
+      <w>147</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>Hodnotenie	
+--
++ znamka: Znamka
++ datum_zapisu: DateTime
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>21</x>
+      <y>105</y>
+      <w>119</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enumeration&gt;&gt;
+Znamka
+--
++ A
++ B
++ C
++ D
++ E
++ Fx</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>462</x>
+      <y>77</y>
+      <w>161</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Predmet
+--
++ nazov: String
++ kredity: Integer
++ kapacita: Integer
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>154</x>
+      <y>252</y>
+      <w>245</w>
+      <h>266</h>
+    </coordinates>
+    <panel_attributes>ZapisnyList
+--
+- zoznam_predmetov: Predmet*
+- je_potvrdeny : Boolean
+--
++ pridaj_predmet (p:Predmet) : Boolean
++ odober_predmet (p:Predmet) : Boolean
++ skontroluj_prerekvizity() : Boolean
++ potvrd_zapis() : Boolean
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>861</x>
+      <y>77</y>
+      <w>154</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>RozvrhovyListok
+--
++ den: DayOfWeek
++ time_from : Time
++ time_to: Time
++ kapacita: Integer
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>609</x>
+      <y>98</y>
+      <w>168</w>
+      <h>196</h>
+    </coordinates>
+    <panel_attributes>Miestnost
+--
++ nazov: String
++ kod_miestnosti: String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>427</x>
+      <y>259</y>
+      <w>168</w>
+      <h>119</h>
+    </coordinates>
+    <panel_attributes>Clovek
+--
+- meno: String
+- datum_narodenia: DateTime
+- rodne_cislo: String
+- adresa_pobytu: Address
+- suchy_pes: Boolean
+- kolko_zien_zmotkal: Integer
+- ma_rad_olivy : Boolean
+- pohlavie: Gender</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>434</x>
+      <y>413</y>
+      <w>224</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Student
+--
++ rocnik_studia: Integer
++ typ_studia: TypStudia
+--
++ vytvor_zapisny_list() : ZapisnyList
++ zapis_ds_na_rl(rl:RozvrhovyListok) : Boolean
++ vrat_aktualne_rozvrhove_listky() : RozvrhovyListok*
++ vrat_zoznam_hodnoteni() : Hodnotenie*
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>14</x>
+      <y>259</y>
+      <w>119</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enumeration&gt;&gt;
+Gender
+--
++ Penis
++ Cicky
++ Thajska Prostitutka
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>469</x>
+      <y>357</y>
+      <w>34</w>
+      <h>69</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>21;21;21;56</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>1057</x>
+      <y>98</y>
+      <w>217</w>
+      <h>154</h>
+    </coordinates>
+    <panel_attributes>Rozvrh
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>14</x>
+      <y>476</y>
+      <w>119</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;primitive&gt;&gt;
+Address
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>14</x>
+      <y>546</y>
+      <w>119</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;primitive&gt;&gt;
+DayOfWeek
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>1211</x>
+      <y>287</y>
+      <w>217</w>
+      <h>154</h>
+    </coordinates>
+    <panel_attributes>Semester
+--
++ akademicky_rok: Integer
++ zimny: Boolean
++ zaciatok_zapisu_predmetov: DateTime
++ koniec_zapisu_predmetov: DateTime
++ zaciatok_vyucby: DateTime
++ koniec_vyucby: DateTime
++ zaciatok_skusania: DateTime
++ koniec_skusania: DateTime
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>672</x>
+      <y>301</y>
+      <w>112</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>Zamestnanec
+--
++ mesacny_plat: Integer</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>574</x>
+      <y>287</y>
+      <w>111</w>
+      <h>34</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>21;21;98;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>686</x>
+      <y>413</y>
+      <w>273</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>Ucitel
+--
+--
++ ohodnot_studenta(s: Student, p: Predmet, h: Znamka) : void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>945</x>
+      <y>483</y>
+      <w>126</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>AdministativnyPracovnik
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>441</x>
+      <y>665</y>
+      <w>217</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>Tajomnik
+--
+--
++ vytvor_rozvrh(rl: RozvrhovyListok*) : Rozvrh
++ pridaj_predmet(p: Predmet) : void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>924</x>
+      <y>665</y>
+      <w>322</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>Spravca
+--
+--
++ vytvor_semester(s: Semester) : void
++ nastav_harmonogram_semesta(s: Semester, terminy: DateTime*) : void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>707</x>
+      <y>665</y>
+      <w>203</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>PracovnikStudijnehoOddelenia
+--
+--
++ potvrd_zapisny_list(z: ZapisnyList) : Boolean
++ pridaj_studenta(s: Student) : void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>686</x>
+      <y>315</y>
+      <w>48</w>
+      <h>111</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>21;21;35;98</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>609</x>
+      <y>574</y>
+      <w>147</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>Doktorand
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>763</x>
+      <y>294</y>
+      <w>237</w>
+      <h>202</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>21;21;224;21;224;189</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>539</x>
+      <y>476</y>
+      <w>419</w>
+      <h>202</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>406;21;294;21;294;140;21;140;21;189</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>847</x>
+      <y>504</y>
+      <w>153</w>
+      <h>174</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>140;21;140;63;21;63;21;161</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1022</x>
+      <y>504</y>
+      <w>34</w>
+      <h>174</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>21;21;21;161</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>686</x>
+      <y>427</y>
+      <w>48</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>35;21;21;147</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>616</x>
+      <y>532</y>
+      <w>34</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>21;21;21;42</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>14</x>
+      <y>399</y>
+      <w>119</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enumeration&gt;&gt;
+TypStudia
+--
++ denne
++ externe
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>987</x>
+      <y>133</y>
+      <w>88</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=1
+m2=0..*
+pozostava z</panel_attributes>
+    <additional_attributes>70;42;28;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>756</x>
+      <y>147</y>
+      <w>118</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+prebieha v   
+m1=      1
+m2=  0..*
+</panel_attributes>
+    <additional_attributes>21;35;105;35</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>378</x>
+      <y>476</y>
+      <w>69</w>
+      <h>76</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;&gt;
+               vytvara
+m1=0..*
+m2=1</panel_attributes>
+    <additional_attributes>21;21;56;63</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>217</x>
+      <y>147</y>
+      <w>258</w>
+      <h>118</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+                 obsahuje
+m1=1..*
+m2=0..*  </panel_attributes>
+    <additional_attributes>21;105;245;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>378</x>
+      <y>329</y>
+      <w>846</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+              patri do
+m1=0..*  
+m2=        0..*</panel_attributes>
+    <additional_attributes>833;35;21;35</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1190</x>
+      <y>231</y>
+      <w>188</w>
+      <h>69</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+pre
+m1=     1
+m2=     1</panel_attributes>
+    <additional_attributes>175;56;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>14</x>
+      <y>28</y>
+      <w>146</w>
+      <h>34</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>21;21;133;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>595</x>
+      <y>196</y>
+      <w>314</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+je zapisany na
+m1=    1
+m2=        0..*</panel_attributes>
+    <additional_attributes>21;217;301;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>154</x>
+      <y>0</y>
+      <w>369</w>
+      <h>909</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+   vie zobrazit svoje
+m2=1
+m1=0..*  </panel_attributes>
+    <additional_attributes>315;413;91;896;21;378;238;21;315;420;238;28;105;812;238;28;77;154</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>441</x>
+      <y>133</y>
+      <w>436</w>
+      <h>601</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+          vyucuje
+m1=         1..*
+m2=       1..*</panel_attributes>
+    <additional_attributes>343;315;280;21;98;588;406;133;91;133;378;301;21;56</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1722</x>
+      <y>154</y>
+      <w>140</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>21;21;133;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>602</x>
+      <y>98</y>
+      <w>272</w>
+      <h>784</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+patri ku                
+m1=1
+m2=        1..*</panel_attributes>
+    <additional_attributes>21;21;175;770;259;63</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>840</x>
+      <y>196</y>
+      <w>111</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+
+je vyucovany                        
+m1=1..*
+m2=1..*</panel_attributes>
+    <additional_attributes>21;217;98;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>266</x>
+      <y>105</y>
+      <w>209</w>
+      <h>62</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+pre        
+m1=     1
+m2=0..*</panel_attributes>
+    <additional_attributes>196;49;21;21</additional_attributes>
+  </element>
+</diagram>
