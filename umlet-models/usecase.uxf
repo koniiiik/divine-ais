@@ -175,7 +175,7 @@ oddelenia</panel_attributes>
       <w>252</w>
       <h>54</h>
     </coordinates>
-    <panel_attributes>UC-12: Pridaj externeho studenta</panel_attributes>
+    <panel_attributes>UC-11: Pridaj externeho studenta</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -341,7 +341,7 @@ oddelenia</panel_attributes>
       <w>243</w>
       <h>54</h>
     </coordinates>
-    <panel_attributes>UC-13: Nastav harmonogram
+    <panel_attributes>UC-12: Nastav harmonogram
 semestra</panel_attributes>
     <additional_attributes/>
   </element>
