@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="12.1">
+<diagram program="umlet" version="11.5">
   <zoom_level>10</zoom_level>
   <element>
     <type>com.umlet.element.Class</type>
@@ -80,20 +80,6 @@ oddelenia</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
-    <type>com.umlet.element.Relation</type>
-    <coordinates>
-      <x>740</x>
-      <y>330</y>
-      <w>332</w>
-      <h>460</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-patri ku                
-m1=1
-m2=        1..*</panel_attributes>
-    <additional_attributes>30;440;250;440;250;30</additional_attributes>
-  </element>
-  <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
       <x>750</x>
@@ -103,20 +89,6 @@ m2=        1..*</panel_attributes>
     </coordinates>
     <panel_attributes>Hodnotenie</panel_attributes>
     <additional_attributes/>
-  </element>
-  <element>
-    <type>com.umlet.element.Relation</type>
-    <coordinates>
-      <x>410</x>
-      <y>190</y>
-      <w>360</w>
-      <h>120</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-                              vie zobrazit svoje
-m2=1
-m1=0..*  </panel_attributes>
-    <additional_attributes>340;30;160;30;160;100;130;100</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
@@ -130,20 +102,6 @@ m1=0..*  </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
-    <type>com.umlet.element.Relation</type>
-    <coordinates>
-      <x>1030</x>
-      <y>300</y>
-      <w>144</w>
-      <h>230</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-prebieha v   
-m1=      1
-m2=  0..*</panel_attributes>
-    <additional_attributes>80;210;80;50;30;50</additional_attributes>
-  </element>
-  <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
       <x>340</x>
@@ -153,91 +111,6 @@ m2=  0..*</panel_attributes>
     </coordinates>
     <panel_attributes>Semester</panel_attributes>
     <additional_attributes/>
-  </element>
-  <element>
-    <type>com.umlet.element.Relation</type>
-    <coordinates>
-      <x>250</x>
-      <y>260</y>
-      <w>180</w>
-      <h>180</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-               vytvara
-m1=0..*
-m2=1</panel_attributes>
-    <additional_attributes>50;160;90;160;90;30;160;30</additional_attributes>
-  </element>
-  <element>
-    <type>com.umlet.element.Relation</type>
-    <coordinates>
-      <x>540</x>
-      <y>380</y>
-      <w>230</w>
-      <h>100</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-                 spravuje
-m1=        0..*
-m2=0..*</panel_attributes>
-    <additional_attributes>100;30;100;80;210;80</additional_attributes>
-  </element>
-  <element>
-    <type>com.umlet.element.Relation</type>
-    <coordinates>
-      <x>630</x>
-      <y>450</y>
-      <w>214</w>
-      <h>330</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-spravuje
-m1=         0..*
-m2=0..*         </panel_attributes>
-    <additional_attributes>50;310;50;200;180;200;180;30</additional_attributes>
-  </element>
-  <element>
-    <type>com.umlet.element.Relation</type>
-    <coordinates>
-      <x>820</x>
-      <y>330</y>
-      <w>190</w>
-      <h>174</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-	
-spravuje   
-m1=       0..*
-m2=0..*</panel_attributes>
-    <additional_attributes>130;30;130;130;30;130</additional_attributes>
-  </element>
-  <element>
-    <type>com.umlet.element.Relation</type>
-    <coordinates>
-      <x>320</x>
-      <y>140</y>
-      <w>178</w>
-      <h>160</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-spravuje
-m1=         0..*
-m2=0..*</panel_attributes>
-    <additional_attributes>120;140;120;50;30;50</additional_attributes>
-  </element>
-  <element>
-    <type>com.umlet.element.Relation</type>
-    <coordinates>
-      <x>160</x>
-      <y>170</y>
-      <w>188</w>
-      <h>260</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-                spravuje
-m1=          0..*
-m2=          0..*</panel_attributes>
-    <additional_attributes>100;240;100;30</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
@@ -253,37 +126,9 @@ m2=          0..*</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>120</x>
-      <y>410</y>
-      <w>440</w>
-      <h>380</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-                 obsahuje
-m1=1..*
-m2=0..*          </panel_attributes>
-    <additional_attributes>420;360;100;360;100;30</additional_attributes>
-  </element>
-  <element>
-    <type>com.umlet.element.Relation</type>
-    <coordinates>
-      <x>530</x>
-      <y>380</y>
-      <w>156</w>
-      <h>400</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-          vyucuje
-m1=         1..*
-m2=       1..*</panel_attributes>
-    <additional_attributes>90;380;90;170;70;170;70;30</additional_attributes>
-  </element>
-  <element>
-    <type>com.umlet.element.Relation</type>
-    <coordinates>
       <x>480</x>
       <y>120</y>
-      <w>544</w>
+      <w>530</w>
       <h>230</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
@@ -291,148 +136,6 @@ je zapisany na
 m1=        0..*
 m2=    1</panel_attributes>
     <additional_attributes>510;210;510;50;30;50;30;160</additional_attributes>
-  </element>
-  <element>
-    <type>com.umlet.element.Relation</type>
-    <coordinates>
-      <x>600</x>
-      <y>210</y>
-      <w>244</w>
-      <h>190</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-urcuje
-m1=        0..*
-m2=    1</panel_attributes>
-    <additional_attributes>210;30;210;110;30;110;30;170</additional_attributes>
-  </element>
-  <element>
-    <type>com.umlet.element.Relation</type>
-    <coordinates>
-      <x>350</x>
-      <y>280</y>
-      <w>152</w>
-      <h>180</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-spravuje        
-m1=       0..*
-m2=       0..*</panel_attributes>
-    <additional_attributes>100;30;100;110;60;110;60;160</additional_attributes>
-  </element>
-  <element>
-    <type>com.umlet.element.Relation</type>
-    <coordinates>
-      <x>410</x>
-      <y>440</y>
-      <w>188</w>
-      <h>340</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-spravuje
-m1=         0..*
-m2=         0..*</panel_attributes>
-    <additional_attributes>150;320;150;210;50;210;50;30</additional_attributes>
-  </element>
-  <element>
-    <type>com.umlet.element.Relation</type>
-    <coordinates>
-      <x>440</x>
-      <y>380</y>
-      <w>212</w>
-      <h>90</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-spravuje                 
-m1=        0..*
-m2=0..*</panel_attributes>
-    <additional_attributes>120;30;120;70;30;70</additional_attributes>
-  </element>
-  <element>
-    <type>com.umlet.element.Relation</type>
-    <coordinates>
-      <x>280</x>
-      <y>440</y>
-      <w>184</w>
-      <h>250</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-               spravuje
-m1=         0..*
-m2=         0..*</panel_attributes>
-    <additional_attributes>100;230;100;30</additional_attributes>
-  </element>
-  <element>
-    <type>com.umlet.element.Relation</type>
-    <coordinates>
-      <x>710</x>
-      <y>190</y>
-      <w>236</w>
-      <h>590</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-pre        
-m1=     1
-m2=0..*</panel_attributes>
-    <additional_attributes>30;570;30;520;180;520;180;30;140;30</additional_attributes>
-  </element>
-  <element>
-    <type>com.umlet.element.Relation</type>
-    <coordinates>
-      <x>460</x>
-      <y>210</y>
-      <w>334</w>
-      <h>160</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-           koho
-m1=     1
-m2=        0..*</panel_attributes>
-    <additional_attributes>30;100;30;140;140;140;140;60;300;60;300;30</additional_attributes>
-  </element>
-  <element>
-    <type>com.umlet.element.Relation</type>
-    <coordinates>
-      <x>620</x>
-      <y>320</y>
-      <w>330</w>
-      <h>100</h>
-    </coordinates>
-    <panel_attributes>lt=.&gt;
-
-je vyucovany                        
-m1=1..*
-m2=1..*</panel_attributes>
-    <additional_attributes>310;30;180;30;180;80;30;80</additional_attributes>
-  </element>
-  <element>
-    <type>com.umlet.element.Relation</type>
-    <coordinates>
-      <x>760</x>
-      <y>450</y>
-      <w>310</w>
-      <h>124</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-	
-       spravuje
-m1=0..*  
-m2=           0..*</panel_attributes>
-    <additional_attributes>290;80;80;80;80;30</additional_attributes>
-  </element>
-  <element>
-    <type>com.umlet.element.Relation</type>
-    <coordinates>
-      <x>180</x>
-      <y>410</y>
-      <w>180</w>
-      <h>290</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-              patri do
-m1=0..*  
-m2=        0..*</panel_attributes>
-    <additional_attributes>160;270;140;270;90;270;90;150;90;30</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
@@ -444,43 +147,5 @@ m2=        0..*</panel_attributes>
     </coordinates>
     <panel_attributes>Rozvrh</panel_attributes>
     <additional_attributes/>
-  </element>
-  <element>
-    <type>com.umlet.element.Relation</type>
-    <coordinates>
-      <x>990</x>
-      <y>230</y>
-      <w>284</w>
-      <h>550</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-je sucastou                        
-m1=      1
-m2=          1..*</panel_attributes>
-    <additional_attributes>120;530;120;420;170;420;170;30;50;30;50;100</additional_attributes>
-  </element>
-  <element>
-    <type>com.umlet.element.Relation</type>
-    <coordinates>
-      <x>350</x>
-      <y>670</y>
-      <w>764</w>
-      <h>160</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-pre
-m1=     1
-m2=     1</panel_attributes>
-    <additional_attributes>30;30;30;140;740;140;740;120</additional_attributes>
   </element>
 </diagram>
