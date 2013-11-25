@@ -1,24 +1,23 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="12.1">
+<?xml version="1.0" encoding="UTF-8"?><diagram program="umlet" version="11.3">
   <zoom_level>10</zoom_level>
   <element>
     <type>com.umlet.element.custom.Database</type>
     <coordinates>
-      <x>930</x>
-      <y>510</y>
+      <x>460</x>
+      <y>520</y>
       <w>110</w>
-      <h>40</h>
+      <h>80</h>
     </coordinates>
-    <panel_attributes>Database</panel_attributes>
+    <panel_attributes>OracleDB.jar</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <type>com.umlet.element.custom.Node</type>
     <coordinates>
-      <x>820</x>
-      <y>350</y>
-      <w>350</w>
-      <h>250</h>
+      <x>390</x>
+      <y>360</y>
+      <w>280</w>
+      <h>290</h>
     </coordinates>
     <panel_attributes>center:&lt;&lt;device&gt;&gt;
 center:Databazovy server
@@ -28,8 +27,8 @@ center:Databazovy server
   <element>
     <type>com.umlet.element.custom.Artefact</type>
     <coordinates>
-      <x>480</x>
-      <y>490</y>
+      <x>120</x>
+      <y>520</y>
       <w>110</w>
       <h>80</h>
     </coordinates>
@@ -39,8 +38,8 @@ center:Databazovy server
   <element>
     <type>com.umlet.element.custom.Node</type>
     <coordinates>
-      <x>370</x>
-      <y>330</y>
+      <x>10</x>
+      <y>360</y>
       <w>340</w>
       <h>290</h>
     </coordinates>
@@ -51,19 +50,19 @@ center:Aplikacny server</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>680</x>
-      <y>540</y>
-      <w>160</w>
+      <x>320</x>
+      <y>570</y>
+      <w>90</w>
       <h>50</h>
     </coordinates>
     <panel_attributes>lt=&lt;.</panel_attributes>
-    <additional_attributes>140;30;30;30</additional_attributes>
+    <additional_attributes>70;30;30;30</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.custom.Node</type>
     <coordinates>
-      <x>420</x>
-      <y>410</y>
+      <x>60</x>
+      <y>440</y>
       <w>250</w>
       <h>190</h>
     </coordinates>
@@ -74,10 +73,10 @@ center:Java Runtime Environment</panel_attributes>
   <element>
     <type>com.umlet.element.custom.Node</type>
     <coordinates>
-      <x>870</x>
-      <y>450</y>
-      <w>250</w>
-      <h>120</h>
+      <x>420</x>
+      <y>440</y>
+      <w>210</w>
+      <h>190</h>
     </coordinates>
     <panel_attributes>center:&lt;&lt;execution environment&gt;&gt;
 center:Oracle Database Server</panel_attributes>
@@ -86,19 +85,19 @@ center:Oracle Database Server</panel_attributes>
   <element>
     <type>com.umlet.element.custom.Artefact</type>
     <coordinates>
-      <x>710</x>
+      <x>120</x>
       <y>140</y>
       <w>110</w>
       <h>80</h>
     </coordinates>
-    <panel_attributes>Backup</panel_attributes>
+    <panel_attributes>Backup.fs</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <type>com.umlet.element.custom.Node</type>
     <coordinates>
-      <x>650</x>
-      <y>60</y>
+      <x>60</x>
+      <y>80</y>
       <w>250</w>
       <h>190</h>
     </coordinates>
@@ -109,8 +108,8 @@ center:RAID Storage</panel_attributes>
   <element>
     <type>com.umlet.element.custom.Node</type>
     <coordinates>
-      <x>610</x>
-      <y>0</y>
+      <x>10</x>
+      <y>20</y>
       <w>340</w>
       <h>280</h>
     </coordinates>
@@ -121,30 +120,30 @@ center:Backup server</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>830</x>
-      <y>250</y>
-      <w>90</w>
-      <h>120</h>
+      <x>220</x>
+      <y>270</y>
+      <w>270</w>
+      <h>110</h>
     </coordinates>
     <panel_attributes>lt=&lt;.</panel_attributes>
-    <additional_attributes>30;30;30;60;70;60;70;100</additional_attributes>
+    <additional_attributes>30;30;30;50;250;50;250;90</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>470</x>
-      <y>90</y>
-      <w>160</w>
-      <h>260</h>
+      <x>110</x>
+      <y>270</y>
+      <w>50</w>
+      <h>110</h>
     </coordinates>
     <panel_attributes>lt=&lt;.</panel_attributes>
-    <additional_attributes>140;30;30;30;30;240</additional_attributes>
+    <additional_attributes>30;30;30;90</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.custom.Node</type>
     <coordinates>
-      <x>1050</x>
-      <y>60</y>
+      <x>410</x>
+      <y>80</y>
       <w>240</w>
       <h>160</h>
     </coordinates>
@@ -155,10 +154,10 @@ center:Windows XP++</panel_attributes>
   <element>
     <type>com.umlet.element.custom.Node</type>
     <coordinates>
-      <x>1010</x>
-      <y>0</y>
-      <w>350</w>
-      <h>250</h>
+      <x>390</x>
+      <y>20</y>
+      <w>280</w>
+      <h>240</h>
     </coordinates>
     <panel_attributes>center:&lt;&lt;device&gt;&gt;
 center:Secret Miner In Datacenter</panel_attributes>
@@ -167,8 +166,8 @@ center:Secret Miner In Datacenter</panel_attributes>
   <element>
     <type>com.umlet.element.custom.Artefact</type>
     <coordinates>
-      <x>1090</x>
-      <y>120</y>
+      <x>450</x>
+      <y>140</y>
       <w>160</w>
       <h>80</h>
     </coordinates>
@@ -178,8 +177,8 @@ center:Secret Miner In Datacenter</panel_attributes>
   <element>
     <type>com.umlet.element.custom.Node</type>
     <coordinates>
-      <x>1240</x>
-      <y>320</y>
+      <x>510</x>
+      <y>290</y>
       <w>110</w>
       <h>50</h>
     </coordinates>
@@ -190,20 +189,20 @@ center:ASIC_Miner</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>1180</x>
-      <y>170</y>
-      <w>130</w>
-      <h>170</h>
+      <x>530</x>
+      <y>190</y>
+      <w>50</w>
+      <h>120</h>
     </coordinates>
     <panel_attributes>lt=&lt;.</panel_attributes>
-    <additional_attributes>110;150;30;30</additional_attributes>
+    <additional_attributes>30;100;30;30</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>1260</x>
-      <y>400</y>
-      <w>240</w>
+      <x>140</x>
+      <y>670</y>
+      <w>410</w>
       <h>120</h>
     </coordinates>
     <panel_attributes>Note:

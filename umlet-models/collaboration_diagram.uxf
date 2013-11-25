@@ -1,13 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="12.1">
+<?xml version="1.0" encoding="UTF-8"?><diagram program="umlet" version="11.3">
   <zoom_level>10</zoom_level>
   <element>
     <type>com.umlet.element.UseCase</type>
     <coordinates>
-      <x>210</x>
-      <y>600</y>
-      <w>510</w>
-      <h>200</h>
+      <x>10</x>
+      <y>290</y>
+      <w>430</w>
+      <h>190</h>
     </coordinates>
     <panel_attributes>lt=.
 Ohodnot studenta
@@ -19,10 +18,10 @@ Ohodnot studenta
   <element>
     <type>com.umlet.element.UseCase</type>
     <coordinates>
-      <x>550</x>
-      <y>180</y>
-      <w>700</w>
-      <h>290</h>
+      <x>20</x>
+      <y>50</y>
+      <w>420</w>
+      <h>220</h>
     </coordinates>
     <panel_attributes>lt=.
 Zapis studenta
@@ -34,8 +33,8 @@ Zapis studenta
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>650</x>
-      <y>290</y>
+      <x>80</x>
+      <y>130</y>
       <w>100</w>
       <h>30</h>
     </coordinates>
@@ -45,8 +44,8 @@ Zapis studenta
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>990</x>
-      <y>290</y>
+      <x>190</x>
+      <y>130</y>
       <w>230</w>
       <h>30</h>
     </coordinates>
@@ -56,8 +55,8 @@ Zapis studenta
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>820</x>
-      <y>380</y>
+      <x>140</x>
+      <y>210</y>
       <w>100</w>
       <h>30</h>
     </coordinates>
@@ -67,30 +66,30 @@ Zapis studenta
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>720</x>
-      <y>270</y>
-      <w>120</w>
-      <h>140</h>
+      <x>130</x>
+      <y>130</y>
+      <w>50</w>
+      <h>100</h>
     </coordinates>
     <panel_attributes>lt=-</panel_attributes>
-    <additional_attributes>30;30;100;120</additional_attributes>
+    <additional_attributes>30;30;30;80</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>890</x>
-      <y>270</y>
-      <w>120</w>
-      <h>140</h>
+      <x>190</x>
+      <y>130</y>
+      <w>50</w>
+      <h>100</h>
     </coordinates>
     <panel_attributes>lt=-</panel_attributes>
-    <additional_attributes>30;120;100;30</additional_attributes>
+    <additional_attributes>30;80;30;30</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>270</x>
-      <y>660</y>
+      <x>80</x>
+      <y>360</y>
       <w>100</w>
       <h>30</h>
     </coordinates>
@@ -100,8 +99,8 @@ Zapis studenta
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>520</x>
-      <y>660</y>
+      <x>200</x>
+      <y>360</y>
       <w>100</w>
       <h>30</h>
     </coordinates>
@@ -111,8 +110,8 @@ Zapis studenta
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>390</x>
-      <y>730</y>
+      <x>80</x>
+      <y>410</y>
       <w>100</w>
       <h>30</h>
     </coordinates>
@@ -122,23 +121,23 @@ Zapis studenta
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>340</x>
-      <y>650</y>
-      <w>200</w>
+      <x>150</x>
+      <y>350</y>
+      <w>70</w>
       <h>50</h>
     </coordinates>
     <panel_attributes>lt=-</panel_attributes>
-    <additional_attributes>30;30;180;30</additional_attributes>
+    <additional_attributes>30;30;50;30</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>290</x>
-      <y>660</y>
-      <w>120</w>
-      <h>110</h>
+      <x>100</x>
+      <y>360</y>
+      <w>50</w>
+      <h>70</h>
     </coordinates>
     <panel_attributes>lt=-</panel_attributes>
-    <additional_attributes>30;30;100;90</additional_attributes>
+    <additional_attributes>30;30;30;50</additional_attributes>
   </element>
 </diagram>
