@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="12.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.umlet.element.SequenceDiagram</type>
+    <coordinates>
+      <x>30</x>
+      <y>150</y>
+      <w>980</w>
+      <h>530</h>
+    </coordinates>
+    <panel_attributes>title: pridaj_studenta
+:Urad~id0|_chudak:Student~id1_|_selma:PracovnikStudOdd~id2_|_:databaza~id3_
+id1&lt;&lt;-id2:id1,id2:new(meno, ...)
+id1-&gt;&gt;id2:id1,id2:student:Student 
+id3-&gt;&gt;id3:id2,id3:chill
+id2-&gt;&gt;id2:id2:ok=skontroluj(student)
+id1&lt;/-id2:id1,id2:*[not ok] dopln_udaje(student)
+id1-&gt;&gt;id1:id1,id2:oprav_udaje(student)
+id0&lt;/-id1:id0,id1,id2:*[chyba peciatka] over(student)
+id0-&gt;&gt;id1:id0,id1,id2:daj_peciatku(student)
+id1-&gt;&gt;id2:id1,id2:student
+id3-&gt;&gt;id3:id2,id3:chill
+id3-&gt;&gt;id3:id2,id3:chill
+id0-&gt;&gt;id0:id2,id0:chill
+id2-/&gt;id3:id2,id3:insert(student)
+id3-/&gt;id2:id2,id3:pridany(student)
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.InteractionFrame</type>
+    <coordinates>
+      <x>100</x>
+      <y>300</y>
+      <w>750</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>while not ok loop</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

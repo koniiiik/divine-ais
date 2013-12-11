@@ -91,15 +91,15 @@ m1=new
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>54</x>
+      <x>63</x>
       <y>729</y>
-      <w>233</w>
+      <w>224</w>
       <h>44</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-
 m1=print
 </panel_attributes>
-    <additional_attributes>216;27;27;27</additional_attributes>
+    <additional_attributes>207;27;27;27</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
