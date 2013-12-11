@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="12.2">
+  <zoom_level>9</zoom_level>
+  <element>
+    <type>com.umlet.element.SequenceDiagram</type>
+    <coordinates>
+      <x>198</x>
+      <y>306</y>
+      <w>1161</w>
+      <h>504</h>
+    </coordinates>
+    <panel_attributes>title: print_transcripts
+_studentPage:SIP~id1_|:VypisZnamokBuilder~id2|_student:Student~id3_|_:Predmet~id4_|_:Hodnotenie~id5_|&lt;&lt;Printer&gt;&gt;~id6
+id1-&gt;&gt;id2:id1,id2:newVypis(student:Student)
+id2-&gt;&gt;id3:id1,id2,id3:getPredmets()
+id2&lt;&lt;-id3:id1,id2,id3:predmets:List&lt;Predmet&gt;
+id6-&gt;id6:id1,id2,id6:chill
+id6-&gt;id6:id1,id2,id6:chill
+id2-&gt;&gt;id4:id1,id2,id4:getHodnotenie(student:Student)
+id4-&gt;&gt;id5:id1,id2,id4,id5:get(student, predmet)
+id4&lt;&lt;-id5:id1,id2,id4,id5:hodnotenies:List&lt;Hodnotenie&gt;
+id4-&gt;id4:id1,id2,id4:calculateHodnotenie(hodnotenies)
+id2&lt;&lt;-id4:id1,id2,id4:hodnotenie:Znamka,Predmet
+id6-&gt;id6:id1,id2,id6:chill
+id6-&gt;id6:id1,id2,id6:chill
+id2-&gt;id2:id1,id2:generateVypisZnamok(List&lt;Znamka,Predmet&gt;)
+id1&lt;&lt;-id2:id1,id2:vypisZnamok:PDFDocument
+id1-/&gt;id6:id1,id6:print(vypisZnamok)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Interface</type>
+    <coordinates>
+      <x>198</x>
+      <y>180</y>
+      <w>144</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>SIP=StudentInfoPage
+--
+new()
+printTranscripts()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.InteractionFrame</type>
+    <coordinates>
+      <x>351</x>
+      <y>477</y>
+      <w>801</w>
+      <h>189</h>
+    </coordinates>
+    <panel_attributes>loop</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>54</x>
+      <y>171</y>
+      <w>53</w>
+      <h>782</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>27;27;36;765</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Actor</type>
+    <coordinates>
+      <x>45</x>
+      <y>135</y>
+      <w>72</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>Student</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>54</x>
+      <y>324</y>
+      <w>170</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+m1=new
+</panel_attributes>
+    <additional_attributes>153;27;27;27</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>54</x>
+      <y>729</y>
+      <w>233</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+m1=print
+</panel_attributes>
+    <additional_attributes>216;27;27;27</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>63</x>
+      <y>747</y>
+      <w>1223</w>
+      <h>188</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-/
+vypisZnamok:papier</panel_attributes>
+    <additional_attributes>27;171;1206;27</additional_attributes>
+  </element>
+</diagram>
