@@ -52,11 +52,10 @@
     <coordinates>
       <x>380</x>
       <y>450</y>
-      <w>90</w>
+      <w>110</w>
       <h>50</h>
     </coordinates>
-    <panel_attributes>Over heslo
-</panel_attributes>
+    <panel_attributes>Overenie hesla</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -271,7 +270,7 @@ entry / ZobrazZapisanePredmety()
       <w>130</w>
       <h>50</h>
     </coordinates>
-    <panel_attributes>Vyznac predmety</panel_attributes>
+    <panel_attributes>Vybrane predmety</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -353,7 +352,7 @@ entry / NacitajHodnotenia
       <w>120</w>
       <h>50</h>
     </coordinates>
-    <panel_attributes>Skontroluj vyber</panel_attributes>
+    <panel_attributes>Kontola vyberu</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -422,7 +421,7 @@ entry / NacitajHodnotenia
       <w>120</w>
       <h>40</h>
     </coordinates>
-    <panel_attributes>Prezri dalsie</panel_attributes>
+    <panel_attributes>Opakovanie</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
